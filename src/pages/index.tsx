@@ -3,14 +3,21 @@ import Image from "next/image";
 import { Box, Container, Grid, Toolbar } from "@mui/material";
 import { GeneralTypo, Heading } from "@/components/Typographies";
 import { CustomTextField } from "@/components/TextFields";
-import { GetStartedButton, PinkButton } from "@/components/Buttons";
+import { GetStartedButton } from "@/components/Buttons";
+import Avatar from "@mui/material/Avatar";
+import AvatarGroup from "@mui/material/AvatarGroup";
+
+const style = {
+  width: "36px",
+  height: "36px",
+};
 
 export default function Home() {
   return (
     <Box sx={{ minHeight: "100vh", background: "#040C18" }}>
       <Toolbar />
       <Container maxWidth="xl">
-        <Grid container>
+        <Grid container spacing={2}>
           <Grid
             item
             sx={{ display: "flex", alignItems: "center" }}
@@ -27,9 +34,49 @@ export default function Home() {
                 The best seamless platform for converting crypto to your local
                 currency.
               </GeneralTypo>
-              <Box sx={{ mt: "7%", display: "flex" }}>
+              <Box
+                sx={{
+                  mt: "7%",
+                  display: "flex",
+                }}
+              >
                 <CustomTextField fullWidth />
                 <GetStartedButton>Get Started</GetStartedButton>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  mt: { md: "3%", xs: "4%" },
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: { xs: "column", sm: "row" },
+                }}
+              >
+                <AvatarGroup total={1600} sx={style}>
+                  <Avatar
+                    alt="Remy Sharp"
+                    src="/static/images/avatar/1.jpg"
+                    sx={style}
+                  />
+                  <Avatar
+                    alt="Travis Howard"
+                    src="/static/images/avatar/2.jpg"
+                    sx={style}
+                  />
+                  <Avatar
+                    alt="Agnes Walker"
+                    src="/static/images/avatar/4.jpg"
+                    sx={style}
+                  />
+                  <Avatar
+                    alt="Trevor Henderson"
+                    src="/static/images/avatar/5.jpg"
+                    sx={style}
+                  />
+                </AvatarGroup>
+                <GeneralTypo sx={{ letterSpacing: "0px" }}>
+                  1,600 people requested access a visit in last 24 hours
+                </GeneralTypo>
               </Box>
             </Box>
           </Grid>
@@ -45,6 +92,49 @@ export default function Home() {
               />
             </Box>
           </Grid>
+        </Grid>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <Box sx={{ display: "flex", justifyContent: "center", mt: "7%" }}>
+              <Box>
+                <Box sx={{ display: "flex", justifyContent: "center" }}>
+                  <Box sx={{ maxWidth: "800px" }}>
+                    <Heading
+                      sx={{
+                        fontSize: { md: "62px", sm: "50px", xs: "30px" },
+                        textAlign: "center",
+                      }}
+                    >
+                      Get Access to your Funds any time, at any place
+                    </Heading>
+                  </Box>
+                </Box>
+
+                <GeneralTypo sx={{ mt: "4%" }}>
+                  Competitive pricing: Access a wider pool of potential buyers,
+                  leading to potentially higher returns and fairer valuations.
+                </GeneralTypo>
+                <GeneralTypo sx={{ mt: "2%" }}>
+                  Transparent market data: Gain insights into market trends and
+                  asset valuations to make informed investment decisions.
+                </GeneralTypo>
+                <GeneralTypo sx={{ mt: "2%" }}>
+                  Mitigate holding period risk: Avoid being locked into
+                  underperforming assets for extended periods.
+                </GeneralTypo>
+                <GeneralTypo sx={{ mt: "2%" }}>
+                  Increased certainty and planning: Gain predictability in your
+                  portfolio management and financial planning.
+                </GeneralTypo>
+                <GeneralTypo sx={{ mt: "2%" }}>
+                  Reinvest and diversify: Free up capital to invest in new
+                  opportunities or diversify your portfolio across more liquid
+                  assets.
+                </GeneralTypo>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12}></Grid>
         </Grid>
       </Container>
     </Box>
