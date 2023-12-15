@@ -14,7 +14,7 @@ const style = {
 
 export default function Home() {
   return (
-    <Box sx={{ minHeight: "100vh", background: "#040C18" }}>
+    <Box sx={{ minHeight: "100vh", background: "#040C18", pb: "10%" }}>
       <Toolbar />
       <Container maxWidth="xl">
         <Grid container spacing={2}>

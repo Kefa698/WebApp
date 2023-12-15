@@ -24,3 +24,10 @@ export const BlackButton = styled(Button)({
     background: "#000",
   },
 });
+
+export const FooterButton = styled(Button)({
+  border: "1px solid #FFF",
+  color: "#fff",
+  textTransform: "capitalize",
+  padding: "1%",
+});
