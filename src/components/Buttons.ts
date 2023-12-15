@@ -13,3 +13,14 @@ export const GetStartedButton = styled(Button)({
   paddingLeft: "4%",
   textTransform: "capitalize",
 });
+
+export const BlackButton = styled(Button)({
+  width: "189px",
+  color: "#fff",
+  height: "59px",
+  borderRadius: "40px",
+  background: "#000",
+  "&:hover": {
+    background: "#000",
+  },
+});

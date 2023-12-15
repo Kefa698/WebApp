@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Box, Container, Grid, Toolbar } from "@mui/material";
 import { GeneralTypo, Heading } from "@/components/Typographies";
 import { CustomTextField } from "@/components/TextFields";
-import { GetStartedButton } from "@/components/Buttons";
+import { BlackButton, GetStartedButton } from "@/components/Buttons";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 
@@ -135,6 +135,44 @@ export default function Home() {
             </Box>
           </Grid>
           <Grid item xs={12}></Grid>
+        </Grid>
+        <Grid
+          container
+          sx={{
+            mt: "7%",
+            borderRadius: "10.724px",
+            border: "1px solid #000",
+            background:
+              "linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%)",
+            boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+            padding: "46px",
+          }}
+        >
+          <Grid item xs={12} md={10}>
+            <Box sx={{}}>
+              <Box>
+                <GeneralTypo
+                  sx={{
+                    color: "#0E0E0E",
+                    letterSpacing: "0px",
+                    fontSize: "12px",
+                  }}
+                >
+                  Request Early Access to Get Started
+                </GeneralTypo>
+                <GeneralTypo
+                  sx={{ letterSpacing: "0px", color: "#000", fontWeight: 800 }}
+                >
+                  Register today & start exploring the endless possiblities.
+                </GeneralTypo>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={2}>
+            <Box>
+              <BlackButton>Get Started</BlackButton>
+            </Box>
+          </Grid>
         </Grid>
       </Container>
     </Box>
