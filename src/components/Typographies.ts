@@ -19,3 +19,12 @@ export const GeneralTypo = styled(Typography)({
   fontFamily: "Manrope",
   letterSpacing: "2px",
 });
+
+export const FooterTypo = styled(Typography)({
+  color: "#FFF",
+  fontFamily: "Manrope",
+  fontSize: " 12px",
+  fontStyle: "normal",
+  fontWeight: 400,
+  lineHeight: "normal",
+});
