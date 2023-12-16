@@ -55,7 +55,11 @@ body {
   overflow-x: hidden;
 }
 
-
+.buttonColor {
+  background: #DE0687 !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+}
 
 
 
