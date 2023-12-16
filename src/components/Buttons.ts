@@ -31,3 +31,15 @@ export const FooterButton = styled(Button)({
   textTransform: "capitalize",
   padding: "1%",
 });
+
+export const PinkButton = styled(Button)({
+  background: "#DE0687",
+  whiteSpace: "nowrap",
+  color: "#fff",
+  "&:hover": {
+    background: "#DE0687",
+  },
+  paddingRight: "4%",
+  paddingLeft: "4%",
+  textTransform: "capitalize",
+});
