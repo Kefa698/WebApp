@@ -114,15 +114,15 @@ export default function Home() {
                   Competitive pricing: Access a wider pool of potential buyers,
                   leading to potentially higher returns and fairer valuations.
                 </GeneralTypo>
-                <GeneralTypo sx={{ mt: "2%" }}>
+                {/* <GeneralTypo sx={{ mt: "2%" }}>
                   Transparent market data: Gain insights into market trends and
                   asset valuations to make informed investment decisions.
                 </GeneralTypo>
                 <GeneralTypo sx={{ mt: "2%" }}>
                   Mitigate holding period risk: Avoid being locked into
                   underperforming assets for extended periods.
-                </GeneralTypo>
-                <GeneralTypo sx={{ mt: "2%" }}>
+                </GeneralTypo> */}
+                {/* <GeneralTypo sx={{ mt: "2%" }}>
                   Increased certainty and planning: Gain predictability in your
                   portfolio management and financial planning.
                 </GeneralTypo>
@@ -130,7 +130,7 @@ export default function Home() {
                   Reinvest and diversify: Free up capital to invest in new
                   opportunities or diversify your portfolio across more liquid
                   assets.
-                </GeneralTypo>
+                </GeneralTypo> */}
               </Box>
             </Box>
           </Grid>
