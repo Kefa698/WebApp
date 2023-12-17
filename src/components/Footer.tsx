@@ -30,7 +30,7 @@ const Footer = () => {
         </Box>
         <Grid container spacing={2} sx={{ mt: "5%" }}>
           <Grid item xs={12} md={4}></Grid>
-          <Grid item xs={12} md={3}>
+          {/* <Grid item xs={12} md={3}>
             <Box>
               <FooterTypo sx={{ fontWeight: "14px", mb: "6%" }}>
                 Links
@@ -40,8 +40,8 @@ const Footer = () => {
               <FooterTypo sx={{ mb: "3%" }}>Counters</FooterTypo>
               <FooterTypo sx={{ mb: "3%" }}>Contact</FooterTypo>
             </Box>
-          </Grid>
-          <Grid item xs={12} md={3}>
+          </Grid> */}
+          {/* <Grid item xs={12} md={3}>
             <Box>
               <FooterTypo sx={{ fontWeight: "14px", mb: "6%" }}>
                 Company
@@ -50,8 +50,8 @@ const Footer = () => {
               <FooterTypo sx={{ mb: "3%" }}>Privacy Policy</FooterTypo>
               <FooterTypo sx={{ mb: "3%" }}>Contact</FooterTypo>
             </Box>
-          </Grid>
-          <Grid item xs={12} md={2}>
+          </Grid> */}
+          {/* <Grid item xs={12} md={2}>
             <Box>
               <FooterTypo sx={{ fontWeight: "14px", mb: "6%" }}>
                 Get in touch
@@ -62,7 +62,7 @@ const Footer = () => {
               <FooterTypo sx={{ mb: "3%" }}>085-132567</FooterTypo>
               <FooterTypo sx={{ mb: "3%" }}>info@payme.net</FooterTypo>
             </Box>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </Box>
